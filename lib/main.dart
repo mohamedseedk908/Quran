@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quran/quran_app.dart';
+import 'package:quran/feature/settings/views/quran_app.dart';
 
 void main() {
   runApp(const Quran());
@@ -11,6 +11,7 @@ class Quran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: QuranApp(),
     );
