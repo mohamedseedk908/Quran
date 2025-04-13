@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quran/feature/settings/views/quran_app.dart';
+import 'core/router/app_router.dart';
 
 void main() {
   runApp(const Quran());
@@ -10,10 +10,10 @@ class Quran extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: QuranApp(),
+      routerConfig: router,
     );
   }
 }
